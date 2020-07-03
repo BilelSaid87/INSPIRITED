@@ -13,3 +13,10 @@ The device can be seen as a speech robot or chatbot allowing following features 
   - Suicidal behavior prediction detection and prevention attempt
   - Continuous support and motivation by proposing small daily activities 
   - Keep the doctor in the loop to observe the patient state and act when necessary 
+
+
+
+
+
+
+

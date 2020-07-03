@@ -1,0 +1,217 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Guten Abend", "Guten Morgen", "Mahlzeit", "Servus", "Servus Inspirited", "Hallo", "Guten Tag", "Hallo Inspirited","Inspirited"],
+         "responses": ["Hallo", "Servus", "Hi", "Habe die Ehre", "Grüß Gott", "Hi, schön von dir zu hören", "Grüß dich"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Tschüss","ciao", "Bis bald", "Auf Wiedersehen!", "habe de Ehre", " will nicht mehr reden", " muss jetzt los", " will jetzt gehen", "Bis zum nächsten mal"],
+         "responses": ["Danke für das nette Gespräch und bis Bald", "Ich wünsche einen schönen {Tag,Abend}", "Tschüss", "Auf Wiederhören"]
+        },
+        { "tag": "yes",
+          "patterns": ["Ja","Natürlich","Ja klar","Selbstverständlich", "Freilich", "Sicher", "Bestimmt", "ja gerne","sehr gerne"],
+          "responses": "JA, kontextabhängig"
+        },
+        { "tag": "no",
+          "patterns": ["Nein", "Ne", "will nicht", "Bestimmt nicht", "Niemals", "Nö", "Sicher nicht", "Kein bock", "Ne, keine Motivation", "mir fehlt die motivation","keine lust"," habe keine lust","Ne, keine lust"],
+          "responses": "Nein, kontextabhängig"
+        },
+       { "tag": "outOfBedYes",
+         "patterns":[" liege nicht mehr im Bett", "bin aufgestanden", "früher aufgewacht als sonst","schon wach","schon aufgestanden","bin früh aufgestanden"],
+         "responses": ["Sehr gut!","Das wird dein Tag!","Guten Morgen!"]
+
+       },
+       { "tag": "outOfBedNo",
+         "patterns":["will nicht aufstehen", "kann nicht aufstehen", "bin zu müde", "keinen Bock aufzustehen", "Es ist noch zu früh", "bin total fertig", "habe keine lust aufzustehen","nicht aus dem Bett gekommen","komme morgens nicht aus dem bett", "will noch im Bett liegen", "will noch im Bett bleiben"],
+         "responses": ["Du schaffst das, Ich glaub an dich", "Auf gehts, das wird ein guter Tag", "Bestimmt wird das ein guter Tag"]
+       },
+       { "tag": "sleepGoodYes",
+         "patterns":["habe gut geschlafen", "habe gut geschlafen", "bin gut erholt", "habe schön geträumt", "tief geschlafen","durch geschlafen","genug geschlafen"],
+         "responses": ["Das freut mich", "Super", "Das wird dein Tag", "Sehr schön"]
+       },
+       { "tag": "sleepGoodNo",
+         "patterns":["war nachts wach","konnte nicht einschlafen","Heute habe ich garnicht gut geschlafen", "schlecht geschlafen", "hatte schlaf Unterbrechungen", "hatte Schlafstörungen", "unterbrochen geschlafen","schlafe schlechter als sonst", "kann nicht durchschlafen", "kann nicht einschlafen", "bin nachts wach gelegen", "bin sehr frueh aufgewacht", "brauche mehr schlaf als sonst"],
+         "responses": ["Das tut mir leid", "",""]
+       },
+       { "tag": "eatGoodYes",
+         "patterns":["habe gesund gegessen", "habe leckeres gegessen", "Mein Essen heute war sehr gut", "Mein Essen heute war gut", "Das essen heute hat gut geschmeckt","Das Essen war sehr gut", "Ich habe gut gegessen","Mein essen war gesund","Das Essen schmeckt","Ich habe viel Appetit", "mein Essen war ausgeglichen"],
+         "responses": ["Sehr gut!","Weiter so!","Super!"]
+       },
+       { "tag": "eatGoodNo",
+         "patterns":["Ich habe ungesund gegessen", "Ich will nichts Essen","mir schmeckt nichts","Ich habe schlecht gegessen", "Ich habe heute nichts gegessen", "Das Essen hat mir nicht geschmeckt", "Das Essen war nicht gut", "Ich habe mich schlecht ernährt", "Ich habe keinen Hunger","Ich habe wenig Appetit","keine Appetit", "Ich habe sehr wenig gegessen", "Ich habe sehr viel gegessen", "Ich habe nur ungesunde sachen gegessen"],
+         "responses": ["Das kannst du besser", "",""]
+       },
+       { "tag": "askForHelp",
+         "patterns":["Ich brauche hilfe","SOS","dringende hilfe","schalte den Notruf sofort","Ich brauche dringende Unterstützung","mein leben ist im gefahr", "hilfe Bitte"],
+         "responses": ["brauche dringende hilfe"]
+       },
+       { "tag": "suicidalBehavior",
+         "patterns":["Ich will mir schaden zufügen","mein leben ist ruiniert","Es wäre besser wenn ich tot bin","meine Familie wäre ohne mich besser dran","Ich will mir etwas antun","Ich will nicht mehr leben", "Ich werde mich umbringen", "Ich habe keine Lust mehr zu leben", "Ich setze dem Ganzen jetzt ein Ende", "Ich bring mich um","ich hasse mich", "Ich hasse euch alle","Ich bin nutzlos", "Das leben macht kein sinn mehr", "Ich will mich töten", "Ich werde mir selbst weh tun ","Ich gehöre zu einer verlorenen Generation", "Es herrscht ein chaos in meinem Innern","Ich kann mein Dasein nicht durchsetzen, aber meine Abwesenheit schon","das absolute Nichts ist immer noch besser als ein Ganzes, in dem du nicht glücklich sein kannst","Es gibt nichts, was sich nicht trennen lässt, der Tod ist nur das Mittel dazu.", "sich umbringen ist die einzige lösung", "Ich setze eine Ende für mein Leben","Ich will sterben","Ich bringe mich um","Ich habe keine freude am leben mehr"],
+         "responses": ["","",""]
+       },
+       { "tag": "askMotivationAdvice",
+         "patterns":["Motivier mich bitte", "Kannst du mich aufheitern ?", "Ich brauche Motivation", "Meine Motivation ist am Boden", "Ich brauche inspiration", "kannst du mich inspirieren ?", "inspierere mich"],
+         "responses": ["Die Welt gehört denen, die lieber zu weit gehen als zurück", "Wenn die Guten nicht kämpfen werden die Schlechten siegen", "Wir können die Richtung des Windes nicht ändern, aber wir können die Segel anders stellen", "Wer hohe Türme bauen will muss lange beim Fundament verweilen", "Lieber etwas riskieren, als ewig zu bereuen, sich nicht getraut zu haben.", "Selbstbewusstsein kommt nicht daher, immer richtig zu liegen, sondern daher, keine Angst zu haben auch mal daneben zu liegen.", "Erfolg ist eine Treppe, keine Tür.", "Egal was um Dich herum passiert, nimm es nicht persönlich…Nichts, was andere Leute tun, passiert wegen Dir, sondern wegen ihnen selbst."]
+       },
+       { "tag": "positiveFeeling",
+         "patterns":["Ich fühle mich nutzvoll","Ich habe viel freude am leben" ,"Ich bin glücklich","Es geht mir gut","Ich bin gut drauf","Meine Stimmung ist gut", "Es geht mir Hervorragend", "Es geht mir super","Es geht mir glänzend","mir geht es fantastisch gut","Ich fühle mich ausgeglichen","Ich fühle mich innerlich sehr gut","Ich bin innerlich ausgeglichen"],
+         "responses": ["good feeling"]
+       },
+       { "tag": "negativeFeeling",
+         "patterns":["Ich fühle mich nutzlos", "Ich bin schlecht drauf","Ich bin schlecht gelaunt","Meine Stimmung ist schlecht", "Ich fühle mich nicht gut", "Ich bin einsam", "Ich fühle mich nicht geehrt","Ich fühle mich innerlich leer", "ich bin einsam", "ich bin traurig","fühle mich traurig","fühle mich leer","Ich bin leer","ich bin innerlich leer","ich habe kein bock auf nichts","Ich habe keine lust auf nichts","kein antrieb", "Ich habe keine motivation","Ich bin bedrückt","Ich fühle mich unglücklich","Ich bin niedergeschlagen" ,"Ich bin nichts", "Ich habe geweint"],
+         "responses": ["bad feeling"]
+       },
+       { "tag": "askMedicamentCalendar",
+         "patterns":["Gib mir Infos zum Medikamenten kalender","Zeig mir meinen Medikamenten kalender","wann soll ich meine Medikamenten nehmen ?", "wann ist die Medikamenten einnahme ?", "errinere mich an die Medikamenten einnahme"],
+         "responses": ["medikamenten Kalender"]
+       },
+       { "tag": "showerYes",
+         "patterns":["Ich habe mich heute gewaschen","Ich fühle mich gut nach dem duschen","duschen macht mir spaß","Ich habe mich heute geduscht","Ich habe mich sauber gemacht", "Ich war heute baden", "Ich gehe jetzt duschen","Ich gehe jetzt baden", "Ich gehe jetzt baden", "baden heute hat spaß gemacht"],
+         "responses": ["schon geduscht"]
+       },
+       { "tag": "showerNo",
+         "patterns":["Ich habe nicht geduscht heute","Ich habe mich heute nicht gewaschen","Ich bin ungewaschen", "kein bock zu duschen", "will nicht duschen", "keine motivation zu duschen", "sich duschen macht kein spaß"],
+         "responses": ["nicht geduscht"]
+       },
+       { "tag": "outsideYes",
+         "patterns":["Ich war heute draußen","Ja,Ich habe ein spaziergang gehabt","Ich bin was trinken gegangen","Ich war heute einkaufen", "Ich bin unterwegs gewesen", "Ich bin zur arbeit gegangen", "Ich habe gearbeitet", "Ich war was trinken", "Ich war in einem Kaffee"],
+         "responses": ["outside JA"]
+       },
+       { "tag": "outsideNo",
+         "patterns":["will alleine bleiben","ich will abschalten","Ich war heute nicht draußen","Heute war ich nur zu Hause","Ich bin nicht rausgegangen", "Ich bin nur auf dem Sofa gesessen", "Ich habe kein bock rauszugehen", "will nicht rausgehen","will nicht raus"],
+         "responses": ["outsideNo"]
+       },
+       { "tag": "metFriendsYes",
+         "patterns":["Ich habe mich heute mit einem Freund getroffen","Ich habe mich mit viele freunde getroffen","Ich habe neue leute kennengelernt", "Ich hatte spaß mit meine freunde", "ich war mit freunde unterwegs"],
+         "responses": ["freunde schon getroffen"]
+       },
+       { "tag": "metFriendsNo",
+         "patterns":["Niemandem getroffen","Ich habe heute niemendem getroffen","Ich habe kein bock auf niemenden","Ich wollte niemenaden sehen", "Ich will niemanden treffen", "Ich habe kein bock auf andere Menschen","Ich will niemanden sehen"],
+         "responses": ["freunde nicht getroffen"]
+       },
+       { "tag": "tellMeJoke",
+         "patterns":["kannst du mir ein Witz erzählen","Erzähl mir einen Witz","Heiter mich auf bitte", "Was ist dein Lieblingswitz ?", "Erzähle mir etwas lustiges","Ich hätte gerne ein Witz um mein mood zu verbessern", "hättest du ein guten witz für mich ?"],
+         "responses": ["benutzer will ein witz hören"]
+       },
+       { "tag": "showMeMyData",
+         "patterns":["Zeig mir meine Patientendaten", "daten anzeigen","Mache ich Fortschritte?", "Was sagst du zu meinem Verhalten", "verlauf meiner daten","kann ich meine Daten sehen ?","Ist mein zustand besser geworden ?","bin ich geheilt ?","habe ich mich geheilt ?"],
+         "responses": ["benutzer will seiner Data sehen"]
+       },
+       { "tag": "sendMyData",
+         "patterns":["Bitte schicke meine Patientendaten","schicke meine daten","daten abschicken","schicke die Therapie Daten","Bitte schicke meinem Arzt meine Patienten daten", "sende meine Daten an meinem Arzt", "sende meine Therapie Daten","schicke mein Verlaufsdaten","informiere mein Therapeut über meine Progresse ","Daten senden"],
+         "responses": ["sende benutzer Data"]
+       },
+       { "tag": "hobbyYes",
+         "patterns":["Ich bin heute meinem Hobby nachgegangen", "Ich habe Spaß bei meinem Hobby gehabt", "Ich habe mein Hobby geübt", "meine Hobby hat spaß gemacht", "Ich war Fußball spielen", "Ich habe Sport gemacht", "Ich habe Handball gespielt", "Ich war im Schwimmbad", "Ich war schwimmen","Ich habe yoga gemacht","Ich habe Sport getrieben", "Ich war mein liebling Sport treiben","das macht mir eine große freude mein hobby zu üben","das macht mir eine große freude schwimmen zu gehen","das macht mir eine große freude fußball zu spielen"],
+         "responses": ["hobbysa ausgeübt"]
+       },
+       { "tag": "hobbyNo",
+         "patterns":["Ich habe heute nichts von meinem Hobby gemacht","mein Hobby macht mir kein Spass mehr" ,"Heute hatte ich keine Lust auf mein Hobby","Ich bin nicht motiviert meine Hobby zu üben", "kein bock auf mein Hobby ","Ich habe keine Hobbys mehr","mein Hobby macht mir kein Spaß mehr","mein Hobby macht mir keine Freude mehr"],
+         "responses": ["hobbys nicht ausgeübt"]
+       },
+       { "tag": "depressionTest",
+         "patterns":["Ich möchte den Depressionstest machen", "Self staging", "Ich möchte mich selbst stagen", "Ich will den Depressionstest ablegen", "Ich will den Hamelton test ablegen", "Ich will den BDI test jetzt machen","standard Depression test ablegen"],
+         "responses": [" Depressionstest nach ICD-10 Normen"]
+       },
+       { "tag": "nightMare",
+         "patterns":["Ich hatte einen Alptraum", "Ich habe schlecht geträumt","Ich habe was schreckliches getraümt", "schlechtes Traum gehabt"],
+         "responses": ["Benutzer hat was schlechtes getraümt und braucht unterstützung"]
+       },
+       { "tag": "panicAttack",
+         "patterns":["Ich habe eine Panikattacke", "Panik", "Panikattacke", "Ich habe schreckliche Angst", "Ich kann nicht richtig atmen","Ich habe Angst"],
+         "responses": ["Panick attake"]
+       },
+       { "tag": "playMyMusic",
+         "patterns":["Spiel meine Lieblingsmusik", "Spiel Musik", "Musik bitte", "Spiele meine playlist","Ich will meine Musik hören"],
+         "responses": ["spiele die Musik"]
+       },
+       { "tag": "aboutDepression",
+         "patterns":["Erzähl mir etwas über Depression", "Infos über Depression bitte", "Ich möchte etwas über Depression erfahren", "definiere Depression", "Was ist unter Depression zu verstehen?","Was ist Depression nach deiner Meinung ?","ich will mehr über meine Krankheit wissen"],
+         "responses": ["allgemeine Infos über die Depression"]
+       },
+       { "tag": "infoDeviceFeatures",
+         "patterns":["Was kannst du denn alles ?", "Was sind deine Funktionen ?", "Was kannst du alles ?", "Wie kannst du mir helfen ?", "wie kannst du mir behilflich sein ?", "was sind deine Fähigkeiten ?", "Wie kannst du mir bei der fortsetzung meiner Therapie helfen ?"],
+         "responses": ["allgemeine Infos über den Device"]
+       },
+       { "tag": "thanks",
+         "patterns":["Danke sehr", "Danke", "Vielen Dank", "sehr hilfreich", "ist hilfreich", "Super, danke", "Danke für die Hilfe"],
+         "responses":["Es war mir ein Vergnügen", "Jederzeit!", "Sehr gerne", "Ich helfe dir gerne", "Sehr gerne, Ich bin hier um zu helfen."]
+       },
+       { "tag": "traurigkeit",
+          "patterns": ["ich bin traurig","ich bin niedergeschlagen", "ich bin bedrueckt", "ich bin deprimiert", "ich bin freudlos", "ich bin geknickt"],
+          "responses":[""]
+        },
+       { "tag": "pessimismus",
+          "patterns": ["ich bin hoffnungslos","ich habe keine Hoffnung mehr", "ich kann mich auf nichts freuen", "ich bin pessimistisch", "es ist aussichtslos", "es wird nie besser werden", "es wird immer schlechter", "es wird immer schlimmer", "ich habe keine Hoffnung mehr", "ich bin hoffnungslos"],
+          "responses":[""]
+        },
+       { "tag": "versagensgefuehle",
+          "patterns": ["ich bin ein Versager","ich habe versagt","ich habe nichts erreicht", "ich habe Fehler gemacht"],
+          "responses":[""]
+        },
+        { "tag": "verlustVonFreude",
+          "patterns": ["ich kann mich auf nichts freuen","ich bin freudlos", "ich habe keine freude mehr", "ich bin gelangweilt", "mir ist langweilig"],
+          "responses":[""]
+        },
+        { "tag": "schuldgefuehle",
+          "patterns": ["ich fuehle mich schuldig","ich habe schuldgefuehle", "ich habe etwas falsch gemacht", "ich habe jemanden enttauescht"],
+          "responses":[""]
+        },
+        { "tag": "bestrafungsgefuehle",
+          "patterns": ["ich bin gestraft","ich fuehle mich bestraft", "ich habe das nicht verdient", "warum muss mir das passieren", "warum ausgerechnet ich", "warum passiert das ausgerechnet mir"],
+          "responses":[""]
+        },
+        { "tag": "selbstablehnung",
+          "patterns": ["ich hasse mich","ich kann nichts mit mir anfangen", "ich bin von mir enttauescht", "ich kann mich nicht leiden", "ich mag mich nicht"],
+          "responses":[""]
+        },
+        { "tag": "selbstvorwuerfe",
+          "patterns": ["ich gebe mir die schuld für","hätte ich es anders gemacht", "hätte ich das gemacht", "hätte ich das nicht gemacht"],
+          "responses":[""]
+        },
+        { "tag": "weinen",
+          "patterns": ["ich habe geweint","ich weine oefter als sonst", "ich kann nicht aufhoeren zu weinen", "ich weine immer wieder", "ich weine oft"],
+          "responses":[""]
+        },
+        { "tag": "unruhe",
+          "patterns": ["ich bin unruhig","ich habe bewegungsdrang", "ich kann nicht still sitzen", "ich muss mich bewegen", "ich komme nicht zur ruhe", "ich komme nicht runter", "ich kann mich nicht beruhigen"],
+          "responses":[""]
+        },
+        { "tag": "interessenverlust",
+          "patterns": ["ich habe keine lust","ich habe kein interesse", "ich vernachlaessige meine freunde", "ich gehe nicht raus"],
+          "responses":[""]
+        },
+        { "tag": "entschlussunfaehigkeit",
+          "patterns": ["ich kann mich nicht entscheiden","ich bin unsicher", "ich kann keine entscheidungen mehr treffen", "mir ist alles egal"],
+          "responses":[""]
+        },
+        { "tag": "wertlosigkeit",
+          "patterns": ["ich bin wertlos","ich bin nichts wert", "ich habe es nicht verdient"],
+          "responses":[""]
+        },
+        { "tag": "energieverlust",
+          "patterns": ["ich habe keine energie mehr","ich bin energielos", "ich bin antriebslos", "mir fehlt der antrieb", "ich bin erschoepft", "ich bin muede", "ich habe keine kraft mehr", "ich bin schwach"],
+          "responses":[""]
+        },
+        { "tag": "reizbarkeit",
+          "patterns": ["ich bin gereizt","ich bin gereizter als sonst", "ich bin leicht reizbar", "ich bin geladen", "ich bin überreizt", "ich fahre schnell hoch", "ich bin aufgedreht"],
+          "responses":[""]
+        },
+        { "tag": "appetit",
+          "patterns": ["ich habe keinen hunger","ich habe keinen appetit", "ich kann nichts essen", "ich kriege nichts runter", "ich esse sehr viel", "ich habe großen appetit", "ich habe fressattacken", "ich habe fressanfaelle", "ich habe abgenommen", "ich habe gewicht verloren", "ich habe zugenommen"],
+          "responses":[""]
+        },
+        { "tag": "konzentration",
+          "patterns": ["ich kann mich nicht konzentrieren","meine konzentration ist schlechter als sonst", "meine konzentration laesst nach", "ich habe konzentrationsschwierigkeiten", "ich kann mich auf nichts konzentrieren"],
+          "responses":[""]
+        },
+        { "tag": "ermuedung",
+          "patterns": ["ich bin muede","ich bin erschoepft", "ich werde schnell muede", "ich werde schneller mueder als sonst", "ich bin ausgelaugt", "ich bin schlapp", "ich kann nicht mehr", "ich habe keine kraft mehr", "ich fuehle mich geraedert"],
+          "responses":[""]
+        },
+        { "tag": "libido",
+          "patterns": ["libido mangel","libido verlust", "libido", "ich habe keine interesse mehr an sex", "ich interesse mich nicht mehr für sex","will kein sex haben", "sex bereitet mir keine Freude mehr", "sex macht mir keine freude mehr"],
+          "responses":[""]
+        }
+      ]
+  }

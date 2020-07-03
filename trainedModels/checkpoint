@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/bilel.said/Desktop/data/MUNCHKIN/produkt/dev/therapieAssisstanceMVP/trainedModels/therapieModelUsingBOW_tflearn"
+all_model_checkpoint_paths: "/Users/bilel.said/Desktop/data/MUNCHKIN/produkt/dev/therapieAssisstanceMVP/trainedModels/therapieModelUsingBOW_tflearn"
