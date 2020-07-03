@@ -15,8 +15,7 @@ The device can be seen as a speech robot or chatbot allowing following features 
   - Keep the doctor in the loop to observe the patient state and act when necessary 
 
 
-
-
+Platform Architecture can be (follow the link below):
 https://github.com/BilelSaid87/munchkinPOC/issues/1
 
 
