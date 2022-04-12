@@ -6,7 +6,7 @@ Innovate healthcare hackathon 2018 WINNER (innovation and audience price)
 https://healthcare-startups.de/macht-landluft-beschwerdefrei-hackathon-in-oberpfalz-gibt-antworten/
 
 
-Munchkin is an AI driven platform to assist people with depression after the inpatient stay in the hospital.
+INSPIRITED is an AI driven platform to assist people with depression after the inpatient stay in the hospital.
 
 The device can be seen as a speech robot or chatbot allowing following features and functionalities: 
   - Mood evaluation and monitoring
